@@ -1,5 +1,6 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { ScrollView } from "react-native/types_generated/index";
 import { FlatList } from "react-native/types_generated/Libraries/Animated/AnimatedExports";
 
 export default function App() {
@@ -28,6 +29,19 @@ export default function App() {
         Hello
       </TouchableOpacity>
       <StatusBar style="auto" />
+
+      <ScrollView>
+        <Text>Item 1</Text>
+        <Text>Item 2</Text>
+        <Text>Item 3</Text>
+        <Text>Item 4</Text>
+        <Text>Item 5</Text>
+        <Text>Item 6</Text>
+        <Text>Item 7</Text>
+        <Text>Item 8</Text>
+        <Text>Item 9</Text>
+        <Text>Item 10</Text>
+      </ScrollView>
 
       <FlatList
         data={DATA}
